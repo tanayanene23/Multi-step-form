@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+
+body{
+    background-color: hsl(217, 100%, 97%);
+    color:  hsl(213, 96%, 18%);
+}
+
+p{
+    font-size: 16px;
+
+}
+
+.form-area{
+    height: 30em;
+    width: 55em;
+    background-color: hsl(0, 0%, 100%);
+    /* background-color: blue; */
+    border-radius: 0.7em;
+    position: absolute;
+    top: 4em;
+    left: 15em;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.sidebar img{
+    height: 28em;
+    margin-left: 1em;
+    margin-top: 1em;
+    position: relative;
+}
+
+.sidebar-content{
+    position: absolute;
+    top: 3em;
+    left: 2em;
+    color: white;
+    text-transform: uppercase;
+    line-height: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.sidebar-content p{
+    font-size: 0.7em;
+    /* color: hsl(231, 11%, 63%); */
+    color: hsl(229, 24%, 87%);
+}
+
+.sidebar-content h4{
+    height: 2em;
+    width: 2em;
+    border: 0.1em solid hsl(229, 24%, 87%);
+    border-radius: 5em;
+    text-align: center;
+    padding-top: 0.4em;
+}
+
+.step{
+    display: flex;
+    gap: 1em;
+}
+
+/* step 1 */
+
+.form-content{
+    display: flex;
+}
+
+
+.page{
+    width: 30em;
+    margin-right: 5em;
+    display: none;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-top: 3em;
+}
+
+
+
+.form-info p{
+    color: hsl(231, 11%, 63%);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+label{
+    margin-top: 0.5em;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+#input{
+    height: 2.5em;
+    border-radius: 0.5em;
+    border: 0.1em solid hsl(229, 24%, 87%);
+    font-weight: 500;
+    padding: 0 1em;
+    color: hsl(213, 96%, 18%);
+}
+
+#input::placeholder{
+    color: hsl(231, 11%, 63%);
+}
+
+#input:hover{
+    cursor: pointer;
+    border-color: hsl(231, 11%, 63%);
+}
+
+
+.label-and-error{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error-message{
+    font-size: 0.8em;
+    color: hsl(354, 84%, 57%);
+}
+
+
+
+#next{
+    padding: 1em 0em;
+    width: 10em;
+    border-radius: 0.5em;
+    background-color: hsl(213, 96%, 18%);
+    color: white;
+    border: none;
+    font-weight: 500;
+    /* margin-left: 25em; */
+    cursor: pointer;
+}
+
+#next:hover{
+    background-color: hsl(213, 76%, 30%);
+}
+
+#back{
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+    color: hsl(231, 11%, 63%);
+    cursor: pointer;
+}
+
+#back:hover{
+    color: hsl(213, 96%, 18%);
+}
+
+
+.buttons{
+    display: flex;  
+    align-items: center;
+    position: absolute;
+    gap: 18em;
+    bottom: 2em;
+    right: 5em;
+}
+
+
+
+/* step 2 - monthly and yearly plans*/
+
+.plan{
+    display: flex;
+    justify-content: space-between;
+}
+
+.plan img{
+    margin-bottom: 2em;
+}
+
+.plan-type{
+    border: 0.1em solid hsl(229, 24%, 87%);
+    border-radius: 0.5em;
+    height: 10em;
+    width: 8em;
+    padding-top: 1.3em;
+    padding-left: 1em;
+    cursor: pointer;
+}
+
+.plan-type:hover{
+    border-color: hsl(243, 100%, 62%);
+}
+
+.plan p:nth-child(2){
+    color:  hsl(213, 96%, 18%);
+    font-weight: 700;
+}
+
+.plan-type #cost{
+    color: hsl(231, 11%, 63%);
+}
+
+#select{
+    cursor: pointer;
+}
+
+#changePlan{
+    cursor: pointer;
+}
+
+#addon-price{
+    color: hsl(213, 96%, 18%);
+}
+
+/* #changePlan:hover{
+    color: hsl(243, 100%, 62%);
+} */
+
+.toggle-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    background-color: hsl(217, 100%, 97%);
+    border-radius: 0.5em;
+    padding: 0.5em 0em;
+}
+
+/* toggle switch */
+
+.toggle {
+    position: relative;
+    width: 2.5em;
+    height: 1.2em;
+    background-color: hsl(213, 96%, 18%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.circle {
+    position: absolute;
+    left: 10%;
+    width: 1em;
+    height: 1em;
+    border-radius: 20px;
+    background-color: white;
+    transition: .3s;
+}
+
+
+.active .circle {
+    left: 90%;
+    transform: translateX(-100%);
+    transition: .3s;
+}
+
+
+/* step 3 - monthly and yearly add ons */
+
+.add-ons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.1em solid hsl(229, 24%, 87%);
+    border-radius: 0.5em;
+    padding: 1em 1em;
+    margin-top: 1em;
+}
+
+
+.addon{
+    display: flex;
+    gap: 1em;
+}
+
+.add-ons p:nth-child(1){
+    color: hsl(213, 96%, 18%);
+    font-weight: 500;
+}
+
+.add-ons p:nth-child(2){
+    color: hsl(231, 11%, 63%);
+}
+
+
+.add-ons #cost{
+    color: hsl(243, 100%, 62%);
+}
+
+
+
+/* step 4 */
+
+.step-4{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.final-details{
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-details{
+    background-color: hsl(217, 100%, 97%);
+    padding: 1em;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+hr{
+    border: 0.1em solid hsl(229, 24%, 87%);
+}
+
+.total{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.total p:nth-child(2){
+    font-weight: 500;
+}
+
+
+.final-details{
+    color: hsl(231, 11%, 63%);
+}
+
+.final-details:nth-child(1){
+    color: hsl(213, 96%, 18%);
+    font-weight: 500;
+}
+
+
+
+/* step 5 */
+    
+.step-5{
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+}
+
+.step-5 img{
+    height: 4em;
+    width: 4em;
+}
+
+.step-5 p{
+    color: hsl(231, 11%, 63%);
+}
+
+
+
+
+
